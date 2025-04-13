@@ -1,0 +1,67 @@
+01:05:07 ~ 01:08:14
+
+/usr/local/bin
+
+┌── public
+│
+├── components
+│   ├── App.vue
+│   └── ...
+│
+└── ...
+
+[ㅤ] - 공백 특수문자	∙
+
+&lt; &gt;
+
+배경 - 빨 : ffd5d5
+배경 - 노 : fff5c5
+배경 - 초 : c5ffda
+배경 - 파 : c5f2ff
+배경 - 보 : f3d9ff
+배경 - 회 : ddd or ededed or f0f0f0
+
+주황색 : ff8b00
+초록색 : 078b01
+파란색 : 1f95f8
+보라색 : 921ef7
+Caption : 999
+
+<span style="background-color:#fff5c5"></span>
+<span style="color:#999"></span>
+
+<figure>
+  <img src="">
+</figure>
+
+<span style="color:#999"></span>
+
+<figurecaption>
+  <span style="color:#999"></span>
+</figurecaption>
+
+/* 이 부분 */
+
+/* ↑ 같은 거 ↓ */
+
+ParentCompnt
+ChildrenCompnt
+
+parentComp
+childComp
+
+Type 1
+Step.01 블라블라
+
+#1_React
+#Part_1
+
+
+
+<br>
+
+---
+
+#### References
+- url
+
