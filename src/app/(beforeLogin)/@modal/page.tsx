@@ -32,10 +32,6 @@ export default function ModalPage() {
           </svg>
         </button>
 
-        <div className="text-center mb-6 text-xl font-semibold">
-          로그인하세요.
-        </div>
-
         <form onSubmit={onSubmit} className="space-y-4">
           {/* 아이디 */}
           <div>
