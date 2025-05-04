@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export default function ModalPage() {
+export default function SignupPage() {
   const [id, setId] = useState();
   const [password, setPassword] = useState();
   const [message, setMessage] = useState();
