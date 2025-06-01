@@ -2,16 +2,20 @@
 
 import { useState } from 'react';
 
-export default function LoginModal() {
+export default function SignupModal() {
   const [id, setId] = useState();
   const [password, setPassword] = useState();
+  const [nickname, setNickname] = useState();
+  const [image, setImage] = useState();
   const [message, setMessage] = useState();
   const onSubmit = () => {};
   const onClickClose = () => {};
 
   const onChangeId = () => {};
-
   const onChangePassword = () => {};
+  const onChangeNickname = () => {};
+  const onChangeImage = () => {};
+
   return (
     <div className="fixed inset-0 z-1 flex items-center justify-center bg-black/50">
       <div className="relative w-full max-w-md mx-auto rounded-2xl bg-white p-6 shadow-xl">
@@ -67,6 +71,40 @@ export default function LoginModal() {
             />
           </div>
 
+          {/* 닉네임 */}
+          <div>
+            <label
+              htmlFor="nickname"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              닉네임
+            </label>
+            <input
+              id="nickname"
+              type="text"
+              value={nickname}
+              onChange={onChangeNickname}
+              className="w-full rounded-lg border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          {/* 이미지 */}
+          <div>
+            <label
+              htmlFor="image"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              이미지
+            </label>
+            <input
+              id="image"
+              type="file"
+              value={image}
+              onChange={onChangeImage}
+              className="w-full rounded-lg border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
           {/* 메시지 */}
           {message && <div className="text-sm text-red-500">{message}</div>}
 
@@ -77,7 +115,7 @@ export default function LoginModal() {
               disabled={!id || !password}
               className="w-full rounded-lg bg-blue-500 text-white py-2 font-semibold hover:bg-blue-600 disabled:opacity-50"
             >
-              로그인
+              회원가입
             </button>
           </div>
         </form>
