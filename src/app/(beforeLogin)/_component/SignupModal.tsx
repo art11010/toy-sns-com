@@ -99,7 +99,6 @@ export default function SignupModal() {
             <input
               id="image"
               type="file"
-              value={image}
               onChange={onChangeImage}
               className="w-full rounded-lg border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
