@@ -27,7 +27,14 @@ export default function RootLayout({ children }: Props) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center mx-auto p-8 pb-20 max-w-lg min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]">
+        <div
+          className="
+            mx-auto p-8 pb-20
+            grid grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16
+            max-w-lg min-h-screen
+            text-foreground bg-background font-[family-name:var(--font-geist-sans)]
+          "
+        >
           {children}
         </div>
       </body>

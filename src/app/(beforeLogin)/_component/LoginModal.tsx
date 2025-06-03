@@ -13,16 +13,16 @@ export default function LoginModal() {
 
   const onChangePassword = () => {};
   return (
-    <div className="fixed inset-0 z-1 flex items-center justify-center bg-black/50">
-      <div className="relative w-full max-w-md mx-auto rounded-2xl bg-white p-6 shadow-xl">
-        {/* 닫기 버튼 */}
+    <div className="flex items-center justify-center bg-black/50 fixed inset-0 z-1  max-w-lg mx-auto">
+      <div className="mx-auto p-6 w-full max-w-md text-foreground bg-background rounded-2xl shadow-xl relative">
         <button
           onClick={onClickClose}
-          className="absolute right-4 top-4 text-gray-500 hover:text-gray-700"
+          className="text-foreground absolute right-4 top-4"
         >
           <svg
             width={24}
             viewBox="0 0 24 24"
+            fill="currentColor"
             aria-hidden="true"
             className="w-6 h-6"
           >
@@ -33,51 +33,43 @@ export default function LoginModal() {
         </button>
 
         <form onSubmit={onSubmit} className="space-y-4">
-          {/* 아이디 */}
           <div>
-            <label
-              htmlFor="id"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
-              아이디
+            <label htmlFor="id" className="block ml-2 mb-1 font-medium text-sm">
+              ID
             </label>
             <input
               id="id"
               type="text"
               value={id}
               onChange={onChangeId}
-              className="w-full rounded-lg border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="p-2 w-full border border-gray-300 rounded-full focus:outline-none focus:ring-1 focus:ring-blue-400"
             />
           </div>
-
-          {/* 비밀번호 */}
           <div>
             <label
               htmlFor="password"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block ml-2 mb-1 font-medium text-sm"
             >
-              비밀번호
+              Password
             </label>
             <input
               id="password"
               type="password"
               value={password}
               onChange={onChangePassword}
-              className="w-full rounded-lg border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="p-2 w-full border border-gray-300 rounded-full focus:outline-none focus:ring-1 focus:ring-blue-400"
             />
           </div>
 
-          {/* 메시지 */}
           {message && <div className="text-sm text-red-500">{message}</div>}
 
-          {/* 로그인 버튼 */}
-          <div>
+          <div className="pt-2">
             <button
               type="submit"
               disabled={!id || !password}
-              className="w-full rounded-lg bg-blue-500 text-white py-2 font-semibold hover:bg-blue-600 disabled:opacity-50"
+              className="btn-primary w-full cursor-pointer disabled:opacity-50"
             >
-              로그인
+              Login
             </button>
           </div>
         </form>

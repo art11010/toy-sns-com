@@ -6,7 +6,7 @@ export default function BeforeLoginPage() {
     <>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
-          className="dark:invert"
+          className="w-[180px] h-[38px] dark:invert"
           src="/next.svg"
           alt="Next.js logo"
           width={180}
@@ -14,23 +14,21 @@ export default function BeforeLoginPage() {
           priority
         />
         <p className="leading-relaxed text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+          Welcome to <b>Next.js SNS</b>! <br />
           Connect, share, and explore with friends. <br />
           Join our community and stay updated!
         </p>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <Link
             href="/i/flow/signup"
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+            className="btn-primary border-black dark:border-white hover:border-transparent"
           >
             Signup
           </Link>
-          <Link
-            href="/i/flow/login"
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center gap-2  hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-          >
+          <Link href="/i/flow/login" className="btn-primary sm:min-w-44 group">
             Login
             <Image
-              className="invert dark:invert-0"
+              className="w-5 h-5 invert dark:invert-0 group-hover:invert"
               src="/vercel.svg"
               alt="Vercel logomark"
               width={20}
