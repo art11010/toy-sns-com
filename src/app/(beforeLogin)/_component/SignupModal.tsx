@@ -17,7 +17,7 @@ export default function SignupModal() {
   const onChangeImage = () => {};
 
   return (
-    <div className="flex items-center justify-center bg-black/50 fixed inset-0 z-1  max-w-lg mx-auto">
+    <div className="flex items-center justify-center bg-black/50 fixed inset-0 z-1">
       <div className="mx-auto p-6 w-full max-w-md text-foreground bg-background rounded-2xl shadow-xl relative">
         <button
           onClick={onClickClose}
@@ -100,7 +100,7 @@ export default function SignupModal() {
             <button
               type="submit"
               disabled={!id || !password}
-              className="btn-primary w-full cursor-pointer disabled:opacity-50"
+              className="btn-primary w-full cursor-pointer disabled:opacity-75"
             >
               Signup
             </button>

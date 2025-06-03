@@ -1,5 +1,14 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function LoginPage() {
-  redirect('/i/flow/login');
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace('/i/flow/login');
+  }, [router]);
+
+  return null;
 }
